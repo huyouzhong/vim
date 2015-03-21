@@ -1,19 +1,21 @@
-set nocompatible
+set nocompatible                " be iMproved, required
 filetype off
 
+" set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
-
+" developers in github , their plugin name repo like below
 Bundle 'gmarik/vundle'
-
+" repo developed by vimscripts named like below
 " molokai color scheme
 Bundle 'molokai'
 
 " Your personal wiki !
+" git clone https://github.com/vim-scripts/vimwiki.git
 Bundle 'vimwiki'
 
 """ Vim iMproved
-
+Bundle 'taglist.vim'
 " Ctrl-P, Just like Sublime Text 2 Command-P Goto Anything
 Bundle 'kien/ctrlp.vim'
 " 快速移动插件
@@ -73,7 +75,7 @@ Bundle 'tpope/vim-haml'
 Bundle 'Puppet-Syntax-Highlighting'
 Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'Yggdroot/indentLine'
-Bundle "Valloric/YouCompleteMe"
+"Bundle "Valloric/YouCompleteMe"
 Bundle "vim-scripts/matchit.zip"
 Bundle "godlygeek/tabular"
 Bundle 'terryma/vim-multiple-cursors'
@@ -193,7 +195,7 @@ endif
 
 ":hi! htmlLink gui=NONE
 let html_no_rendering=1
-"colorscheme molokai
+colorscheme molokai
 "colo ir_black
 "colo ir_black
 "map <C-P> :FufFile
@@ -206,7 +208,7 @@ let mapleader=","
 " enable gitgutter hightlight changed lines
 "let g:gitgutter_highlight_lines = 1
 
-let g:EasyMotion_leader_key = '<Leader><Leader>'
+let g:EasyMotion_leader_key = '<Space>'
 
 set laststatus=2
 
@@ -275,13 +277,13 @@ let g:airline_left_sep = '»'
 let g:airline_left_sep = '▶'
 let g:airline_right_sep = '«'
 let g:airline_right_sep = '◀'
-let g:airline_linecolumn_prefix = '␊ '
-let g:airline_linecolumn_prefix = '␤ '
-let g:airline_linecolumn_prefix = '¶ '
-let g:airline_fugitive_prefix = '⎇ '
-let g:airline_paste_symbol = 'ρ'
-let g:airline_paste_symbol = 'Þ'
-let g:airline_paste_symbol = '∥'
+"let g:airline_linecolumn_prefix = '␊ '
+"let g:airline_linecolumn_prefix = '␤ '
+"let g:airline_linecolumn_prefix = '¶ '
+"let g:airline_fugitive_prefix = '⎇ '
+"let g:airline_paste_symbol = 'ρ'
+"let g:airline_paste_symbol = 'Þ'
+"let g:airline_paste_symbol = '∥'
 
 " Start tabular options
 let mapleader=','
